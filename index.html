@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Are We Doing</title>
+</head>
+<body >
+  <div class="background">
+  <div class= "coding">
+  <h1 id="title">Coding Survey</h1>
+  
+  <p id="description">Gathering data on software engeineers</p>
+</div>
+  <form id="survey-form">
+  
+    <div >
+     <label id="name-label" > <p>Name</p></label>
+      <input type="text" placeholder="First & Last" id="name" required class="form_inputs">
+   </div> <br/>
+   
+   <div>
+    <label id="email-label" > <p>Email</p></label>
+      <input type="email" placeholder="Email" id="email" required class="form_inputs">
+  </div> <br/>
+ 
+  <div>
+    <label id="number-label" > <p>Age (optional) </p></label>
+    <input type="number" id="number" placeholder= "Age" min="10" max="110" class="form_inputs">
+  </div><br/>
+
+  <div>
+    <label id="stage-of-life" > <p>What position best describes you </p></label>
+    <select name="role" id="dropdown" required class="form_inputs">
+       <option value="grade-student">Grade Student</option> 
+       <option value="college">College Student</option> 
+       <option value="graduate-student">Postgraduate</option> 
+       <option value="full-time">Full-Time</option> 
+       <option value="part-time">Part-Time</option> 
+       <option value="other"> Other</option> 
+    </select>
+  </div><br/>
+
+  <div>
+    <p>How long have you been coding</p>
+    <div class="length">
+    <label> 
+        <input type="radio" value="less-than-3-months" name= "hours" required>Less than 6 Months
+    </label>
+     <label>
+        <input type="radio" value="4-7" name= "hours">6-9 months
+      </label><br/> 
+      <label>
+        <input type="radio" value="8-12" name= "hours">8-12
+      </label>
+      <label>
+        <input type="radio" value="more-than-12" name= "hours">More than 12
+      </label>  
+    </div>
+  </div><br/>
+
+<div>
+  <p>What languages are you proficient in</p>
+  <div class="proficient">
+  <label> 
+    <input type="checkbox" value="python">Python
+  </label>
+  <label >
+   <input type="checkbox" value="java">Java
+  </label>
+  <label>
+    <input type="checkbox" value="JavaScript">JavaScript
+  </label>
+  <label>
+    <input type="checkbox" value="c++">C++
+  </label>
+  <label>
+    <input type="checkbox" value="c#">C#
+  </label>
+  <label>
+   <input type="checkbox" value="php">PHP
+  </label>
+  <label>
+    <input type="checkbox" value="swift">Swift
+  </label>
+  <label>
+    <input type="checkbox" value="ruby">Ruby
+  </label>
+</div>
+</div><br/>
+
+<div>
+  <p>What recommendations would you give to someone looking to get into coding?</p>
+<textarea id="comments" name="comments" placeholder="Additional Comments..." class="comments"></textarea>
+</div><br/>
+
+<input type="submit" value="Submit" id="submit">
+
+  </form>
+</div>
+</body>
+<script src= "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
